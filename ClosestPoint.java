@@ -1,3 +1,7 @@
+/**
+ * @author : Hansheng Liu
+ * @school : University of Adelaide
+ */
 package com.adelaide.henry.bruceforce;
 
 import org.jetbrains.annotations.NotNull;
@@ -6,6 +10,7 @@ import java.util.Arrays;
 
 //The Class that is used to find the points
 public class ClosestPoint {
+    //inner class Point
     private class Point implements Comparable<Point>{
         private double x;
         private double y;
@@ -39,6 +44,7 @@ public class ClosestPoint {
             return this.getX()*this.getX() + this.getY()*this.getY();
         }
     }
+    //inner class Heap to construct heap data structure
     private class Heap{
         private Point[] array;
         private int i = 0;
@@ -99,6 +105,7 @@ public class ClosestPoint {
                 maxHeapify(iMax,heapSize);
             }
         }
+        //swap the two values
         private void swap(int i,int j){
             Point temp = array[i];
             array[i] = array[j];
