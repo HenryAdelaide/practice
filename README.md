@@ -1,2 +1,2 @@
 # practice
-In order to implement the algorithm
+In order to practice and implement the algorithm
